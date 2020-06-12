@@ -1,663 +1,14 @@
-
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
     
 body{
     padding: 0;
     margin: 0;
-/*     background-color: rgba(0,0,0,0.1); */
     font-family: 'Titillium Web', sans-serif;
-    background-image: url('../img/bg.png');
-
-}
-
-body::-webkit-scrollbar { 
-    display: none; 
-}
-
-
-
-/* ------------ container ------------ */
-.container{
-    padding:0px;
-    width:280px;
-    margin:0;
-}
-
-
-/* ------------ header ------------ */
-.header{
-    width: 320px;
-    height:200px;
-    background-image: url('../img/bg.png');
-    background-size: 100% 200%;
-    background-repeat: no-repeat;
-    border-radius:0;
-    position: relative;
-    border-bottom:5px solid red;
-}
-
-
-h2{
-    position:absolute;
-    top:40px;
-    left:40px;
-    font-size:40px;
-    font-family:cursive;
-    color:yellow;
-    text-shadow:1px 1px red;
-    letter-spacing:3px;
-
-}
-
-
-.clear{
-    width : 30px;
-    height: 30px;
-    position: absolute;
-    right:20px;
-    top: 20px;
-}
-.clear i{
-    font-size: 25px;
-    color: yellow;
-}
-.clear i:hover{
-    cursor: pointer;
-    text-shadow: 1px 3px 5px #000;
-    transform: rotate(45deg);
-    /* transition:all 0.6s ease; */
-}
-
-
-#date{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: yellow;
-    text-shadow:1px 1px red;
-    font-size: 20px;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-
-
-/* ------------ content ------------ */
-.content{
-    width:320px;
-    height: 410px;
-    max-height:1000px;
-    background-color: #4162f6;
-    overflow: auto;
-}
-
-
-.content::-webkit-scrollbar { 
-    display: none; 
-}
-
-
-.content ul{
-    padding:0;
-    margin:0;
-}
-
-
-.item{
-    background:#9191c1;
-    width:320px;
-    height: 45px;
-    min-height: 45px;
-    position: relative;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.fa-circle-thin{
-    position: absolute;
-    font-size: 25px;
-    padding-left:5px;
-    left:15px;
-    top:10px;
-    color:white;
-}
-.item i.co:hover{
-    cursor: pointer;
-}
-.fa-check-circle{
-    color:#c1ff01;
-    text-shadow:1px 0px white;
-}
-.text{
-    position: absolute;
-    padding:0;
-    margin:0;
-    font-size: 20px;
-    left:50px;
-    top:5px;
-    background-color: transparent;
-    max-width:285px;
-    color:white;
-}
-
-.lineThrough{
-    text-decoration: line-through;
-    color : red;
-}
-
-.item i.de{
-    position: absolute;
-    font-size: 25px;
-    right:15px;
-    top:10px;
-    color:red;
-}
-
-.item i.de:hover{
-    color:#af0000;
-    cursor: pointer;
-}
-
-
-/* ------------ add item ------------ */
-.add-to-do{
-    position: relative;
-    width: 300px;
-    height:35px;
-    background-color: #2a2aad;
-    padding: 10px;
-    border-top: 5px solid red;
-}
-
-
-.add-to-do i{
-    position: absolute;
-    font-size: 30px;
-    color: yellow;
-    top:20%;
-}
-
-.add-to-do input{
-    position: absolute;
-    left: 50px;
-    height: 30px;
-    width: 234px;
-    background-color: none;
-    outline: 1px solid yellow;
-    font-size: 15px;
-    padding-left:10px;
-    color:blue;
-    background:white;
-}
-
-
-.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input::-moz-placeholder { /* Firefox 19+ */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input:-ms-input-placeholder { /* IE 10+ */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input:-moz-placeholder { /* Firefox 18- */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-
-
-
-
-/* ---------------The media query section----------------- */
-
-@media screen and (max-width:320px){
-
-    
-body{
-    padding: 0;
-    margin: 0;
-/*     background-color: rgba(0,0,0,0.1); */
-    font-family: 'Titillium Web', sans-serif;
-    background-image: url('../img/bg.png');
-
-}
-
-body::-webkit-scrollbar { 
-    display: none; 
-}
-
-
-
-/* ------------ container ------------ */
-.container{
-    padding:0px;
-    width:280px;
-    margin:0;
-}
-
-
-/* ------------ header ------------ */
-.header{
-    width: 320px;
-    height:200px;
-    background-image: url('../img/bg.png');
-    background-size: 100% 200%;
-    background-repeat: no-repeat;
-    border-radius:0;
-    position: relative;
-    border-bottom:5px solid red;
-}
-
-
-h2{
-    position:absolute;
-    top:40px;
-    left:40px;
-    font-size:40px;
-    font-family:cursive;
-    color:yellow;
-    text-shadow:1px 1px red;
-    letter-spacing:3px;
-
-}
-
-
-.clear{
-    width : 30px;
-    height: 30px;
-    position: absolute;
-    right:20px;
-    top: 20px;
-}
-.clear i{
-    font-size: 25px;
-    color: yellow;
-}
-.clear i:hover{
-    cursor: pointer;
-    text-shadow: 1px 3px 5px #000;
-    transform: rotate(45deg);
-    /* transition:all 0.6s ease; */
-}
-
-
-#date{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: yellow;
-    text-shadow:1px 1px red;
-    font-size: 20px;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-
-
-/* ------------ content ------------ */
-.content{
-    width:320px;
-    height: 410px;
-    max-height:1000px;
-    background-color: #593bff9e;
-    overflow: auto;
-}
-
-
-.content::-webkit-scrollbar { 
-    display: none; 
-}
-
-
-.content ul{
-    padding:0;
-    margin:0;
-}
-
-
-.item{
-    background:#9191c1;
-    width:320px;
-    height: 45px;
-    min-height: 45px;
-    position: relative;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.fa-circle-thin{
-    position: absolute;
-    font-size: 25px;
-    padding-left:5px;
-    left:15px;
-    top:10px;
-    color:white;
-}
-.item i.co:hover{
-    cursor: pointer;
-}
-.fa-check-circle{
-    color:#c1ff01;
-    text-shadow:1px 0px white;
-}
-.text{
-    position: absolute;
-    padding:0;
-    margin:0;
-    font-size: 20px;
-    left:50px;
-    top:5px;
-    background-color: transparent;
-    max-width:285px;
-    color:white;
-}
-
-.lineThrough{
-    text-decoration: line-through;
-    color : red;
-}
-
-.item i.de{
-    position: absolute;
-    font-size: 25px;
-    right:15px;
-    top:10px;
-    color:red;
-}
-
-.item i.de:hover{
-    color:#af0000;
-    cursor: pointer;
-}
-
-
-/* ------------ add item ------------ */
-.add-to-do{
-    position: relative;
-    width: 300px;
-    height:35px;
-    background-color: #2a2aad;
-    padding: 10px;
-    border-top: 5px solid red;
-}
-
-
-.add-to-do i{
-    position: absolute;
-    font-size: 30px;
-    color: yellow;
-    top:20%;
-}
-
-.add-to-do input{
-    position: absolute;
-    left: 50px;
-    height: 30px;
-    width: 234px;
-    background-color: none;
-    outline: 1px solid yellow;
-    font-size: 15px;
-    padding-left:10px;
-    color:blue;
-    background:white;
-}
-
-
-.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input::-moz-placeholder { /* Firefox 19+ */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input:-ms-input-placeholder { /* IE 10+ */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input:-moz-placeholder { /* Firefox 18- */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-
-}
-
-
-
-/* ---------------The media query section----------------- */
-
-@media screen and (max-width:375px) and (min-width:321px){
-
-    
-body{
-    padding: 0;
-    margin: 0;
-/*     background-color: rgba(0,0,0,0.1); */
-    font-family: 'Titillium Web', sans-serif;
-    background-image: url('../img/bg.png');
-
-}
-
-body::-webkit-scrollbar { 
-    display: none; 
-}
-
-
-
-/* ------------ container ------------ */
-.container{
-    padding:0px;
-    width:380px;
-    margin:0;
-}
-
-
-/* ------------ header ------------ */
-.header{
-    width: 380px;
-    height:200px;
-    background-image: url('../img/bg.png');
-    background-size: 100% 200%;
-    background-repeat: no-repeat;
-    border-radius:0;
-    position: relative;
-    border-bottom:5px solid red;
-}
-
-
-.clear{
-    width : 30px;
-    height: 30px;
-    position: absolute;
-    right:20px;
-    top: 20px;
-}
-.clear i{
-    font-size: 25px;
-    color: yellow;
-}
-.clear i:hover{
-    cursor: pointer;
-    text-shadow: 1px 3px 5px #000;
-    transform: rotate(45deg);
-    /* transition:all 0.6s ease; */
-}
-
-
-#date{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: yellow;
-    text-shadow:1px 1px red;
-    font-size: 20px;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-
-
-/* ------------ content ------------ */
-.content{
-    width:380px;
-    height: 410px;
-    max-height:1000px;
-    background-color: #593bff9e;
-    overflow: auto;
-}
-
-
-.content::-webkit-scrollbar { 
-    display: none; 
-}
-
-
-.content ul{
-    padding:0;
-    margin:0;
-}
-
-
-.item{
-    background:#9191c1;
-    width:380px;
-    height: 45px;
-    min-height: 45px;
-    position: relative;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.fa-circle-thin{
-    position: absolute;
-    font-size: 25px;
-    padding-left:5px;
-    left:15px;
-    top:10px;
-    color:white;
-}
-.item i.co:hover{
-    cursor: pointer;
-}
-.fa-check-circle{
-    color:#c1ff01;
-    text-shadow:1px 0px white;
-}
-.text{
-    position: absolute;
-    padding:0;
-    margin:0;
-    font-size: 20px;
-    left:50px;
-    top:5px;
-    background-color: transparent;
-    max-width:285px;
-    color:white;
-}
-
-.lineThrough{
-    text-decoration: line-through;
-    color : red;
-}
-
-.item i.de{
-    position: absolute;
-    font-size: 25px;
-    right:15px;
-    top:10px;
-    color:red;
-}
-
-.item i.de:hover{
-    color:#af0000;
-    cursor: pointer;
-}
-
-
-/* ------------ add item ------------ */
-.add-to-do{
-    position: relative;
-    width: 360px;
-    height:40px;
-    background-color: #2a2aad;
-    padding: 10px;
-    border-top: 5px solid red;
-}
-
-
-.add-to-do i{
-    position: absolute;
-    font-size: 40px;
-    color: yellow;
-}
-
-.add-to-do input{
-    position: absolute;
-    left: 50px;
-    height: 35px;
-    width: 295px;
-    background-color: none;
-    outline: 1px solid yellow;
-    font-size: 20px;
-    padding-left:10px;
-    color:blue;
-    background:white;
-}
-
-
-.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input::-moz-placeholder { /* Firefox 19+ */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input:-ms-input-placeholder { /* IE 10+ */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-.add-to-do input:-moz-placeholder { /* Firefox 18- */
-    color: #4162f6;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-}
-
-}
-
-
-
-/* ---------------The media query section----------------- */
-
-@media screen and (max-width:425px) and (min-width:376px){
-
-    
-    
-body{
-    padding: 0;
-    margin: 0;
-/*     background-color: rgba(0,0,0,0.1); */
-    font-family: 'Titillium Web', sans-serif;
-    background-image: url('../img/bg.png');
+/*     background-image: url('../img/bg.png'); */
 
 }
 
@@ -672,6 +23,7 @@ body::-webkit-scrollbar {
     padding:0px;
     width:100%;
     margin:0;
+    height:500px;
 }
 
 
@@ -687,17 +39,32 @@ body::-webkit-scrollbar {
     border-bottom:5px solid red;
 }
 
+.plan{
+    widht:100%;
+    height:100px;
+    padding:15px;
+}
+
+.plan h2{
+    font-size:40px;
+    font-family:cursive;
+    color:yellow;
+    text-shadow:1px 1px red;
+    letter-spacing:3px;
+    text-align:center;
+
+}
+
 
 .clear{
-    width : 30px;
-    height: 30px;
-    position: absolute;
-    right:20px;
-    top: 20px;
+    width : 100%;
+    height: 45px;
+    padding:10px;
 }
 .clear i{
     font-size: 25px;
     color: yellow;
+    float:right;
 }
 .clear i:hover{
     cursor: pointer;
@@ -708,9 +75,8 @@ body::-webkit-scrollbar {
 
 
 #date{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+    padding:10px;
+    width:100%;
     color: yellow;
     text-shadow:1px 1px red;
     font-size: 20px;
@@ -722,10 +88,11 @@ body::-webkit-scrollbar {
 /* ------------ content ------------ */
 .content{
     width:100%;
-    height: 400px;
-    max-height:1000px;
-    background-color: #593bff9e;
+    height: 374px;
     overflow: auto;
+    background-image: url('../img/bg.png');
+    background-size:cover;
+    background-position:center;
 }
 
 
@@ -734,17 +101,10 @@ body::-webkit-scrollbar {
 }
 
 
-.content ul{
-    padding:0;
-    margin:0;
-}
-
-
 .item{
     background:#9191c1;
     width:100%;
     height: 45px;
-    min-height: 45px;
     position: relative;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     list-style: none;
@@ -765,18 +125,24 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 .fa-check-circle{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
     color:#c1ff01;
     text-shadow:1px 0px white;
 }
+
 .text{
     position: absolute;
     padding:0;
     margin:0;
     font-size: 20px;
-    left:50px;
+    left:60px;
     top:5px;
     background-color: transparent;
-    max-width:285px;
+    width:100%;
     color:white;
 }
 
@@ -802,11 +168,10 @@ body::-webkit-scrollbar {
 /* ------------ add item ------------ */
 .add-to-do{
     position: relative;
-    width:95%;
-    height:40px;
+    width: 100%;
+    height:75px;
     background-color: #2a2aad;
     padding: 10px;
-    border-top: 5px solid red;
 }
 
 
@@ -814,17 +179,17 @@ body::-webkit-scrollbar {
     position: absolute;
     font-size: 40px;
     color: yellow;
+    top:20%;
 }
 
 .add-to-do input{
     position: absolute;
     left: 50px;
-    height: 35px;
-    width:80%;
+    width: 93%;
     background-color: none;
-    outline: 1px solid yellow;
-    font-size: 20px;
-    padding-left:10px;
+    outline: 1px solid red;
+    font-size: 15px;
+    padding:15px 10px;
     color:blue;
     background:white;
 }
@@ -851,21 +216,23 @@ body::-webkit-scrollbar {
     font-size: 20px;
 }
 
+
+
+
+/* ------------------The Media query section----------------- */
+
+@media screen and (max-width:320px){
+    *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
-
-
-
-/* ---------------The media query section----------------- */
-
-@media screen and (max-width:768px) and (min-width:426px){
-
     
 body{
     padding: 0;
     margin: 0;
-    background-color: rgba(0,0,0,0.1);
     font-family: 'Titillium Web', sans-serif;
-    background-image: url('../img/bg.png');
+/*     background-image: url('../img/bg.png'); */
 
 }
 
@@ -880,12 +247,13 @@ body::-webkit-scrollbar {
     padding:0px;
     width:100%;
     margin:0;
+    height:500px;
 }
 
 
 /* ------------ header ------------ */
 .header{
-    width:100%;
+    width: 100%;
     height:200px;
     background-image: url('../img/bg.png');
     background-size: 100% 200%;
@@ -895,18 +263,32 @@ body::-webkit-scrollbar {
     border-bottom:5px solid red;
 }
 
+.plan{
+    widht:100%;
+    height:100px;
+    padding:15px;
+}
+
+.plan h2{
+    font-size:30px;
+    font-family:cursive;
+    color:yellow;
+    text-shadow:1px 1px red;
+    letter-spacing:3px;
+    text-align:center;
+
+}
+
 
 .clear{
-    /* background:red; */
-    width : 30px;
-    height: 30px;
-    position: absolute;
-    right:20px;
-    top: 20px;
+    width : 100%;
+    height: 45px;
+    padding:10px;
 }
 .clear i{
-    font-size: 30px;
+    font-size: 20px;
     color: yellow;
+    float:right;
 }
 .clear i:hover{
     cursor: pointer;
@@ -917,12 +299,11 @@ body::-webkit-scrollbar {
 
 
 #date{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+    padding:10px;
+    width:100%;
     color: yellow;
     text-shadow:1px 1px red;
-    font-size: 25px;
+    font-size: 18px;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -931,10 +312,11 @@ body::-webkit-scrollbar {
 /* ------------ content ------------ */
 .content{
     width:100%;
-    height: 477px;
-    max-height:1000px;
-    background-color: #593bff9e;
+    height: 374px;
     overflow: auto;
+    background-image: url('../img/bg2.jpg');
+    background-size:cover;
+    background-position:center;
 }
 
 
@@ -943,17 +325,10 @@ body::-webkit-scrollbar {
 }
 
 
-.content ul{
-    padding:0;
-    margin:0;
-}
-
-
 .item{
     background:#9191c1;
     width:100%;
     height: 45px;
-    min-height: 45px;
     position: relative;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     list-style: none;
@@ -964,7 +339,7 @@ body::-webkit-scrollbar {
 
 .fa-circle-thin{
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     padding-left:5px;
     left:15px;
     top:10px;
@@ -974,18 +349,24 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 .fa-check-circle{
+    position: absolute;
+    font-size: 20px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
     color:#c1ff01;
     text-shadow:1px 0px white;
 }
+
 .text{
     position: absolute;
     padding:0;
     margin:0;
-    font-size: 20px;
-    left:50px;
-    top:5px;
+    font-size: 18px;
+    left:60px;
+    top:6px;
     background-color: transparent;
-    max-width:285px;
+    width:80%;
     color:white;
 }
 
@@ -996,7 +377,7 @@ body::-webkit-scrollbar {
 
 .item i.de{
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     right:15px;
     top:10px;
     color:red;
@@ -1011,29 +392,30 @@ body::-webkit-scrollbar {
 /* ------------ add item ------------ */
 .add-to-do{
     position: relative;
-    width: 97%;
-    height:40px;
-    background-color: #7f7faf;
+    width: 100%;
+    height:175px;
+     background-image: url('../img/bg2.jpg');
+     background-size:cover;
+     background-position:center;
     padding: 10px;
-    border-top: 5px solid red;
 }
 
 
 .add-to-do i{
     position: absolute;
-    font-size: 40px;
+    font-size: 30px;
     color: yellow;
+    top:8%;
 }
 
 .add-to-do input{
     position: absolute;
     left: 50px;
-    height: 35px;
-    width: 87%;
+    width: 78%;
     background-color: none;
-    outline: 1px solid yellow;
-    font-size: 20px;
-    padding-left:10px;
+    outline: 1px solid red;
+    font-size: 17px;
+    padding:10px 10px;
     color:blue;
     background:white;
 }
@@ -1042,7 +424,7 @@ body::-webkit-scrollbar {
 .add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
+    font-size: 19px;
 }
 .add-to-do input::-moz-placeholder { /* Firefox 19+ */
     color: #4162f6;
@@ -1060,12 +442,694 @@ body::-webkit-scrollbar {
     font-size: 20px;
 }
 
+
 }
 
 
 
-@media screen and (min-width:769px){
-    body{
-        display:;
-    }
+/* ------------------The Media query section----------------- */
+
+@media screen and (max-width:375px) and (min-width:321px){
+    *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
+    
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+/*     background-image: url('../img/bg.png'); */
+
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+/* ------------ container ------------ */
+.container{
+    padding:0px;
+    width:100%;
+    margin:0;
+    height:500px;
+}
+
+
+/* ------------ header ------------ */
+.header{
+    width: 100%;
+    height:200px;
+    background-image: url('../img/bg.png');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius:0;
+    position: relative;
+    border-bottom:5px solid red;
+}
+
+.plan{
+    widht:100%;
+    height:100px;
+    padding:15px;
+}
+
+.plan h2{
+    font-size:30px;
+    font-family:cursive;
+    color:yellow;
+    text-shadow:1px 1px red;
+    letter-spacing:3px;
+    text-align:center;
+
+}
+
+
+.clear{
+    width : 100%;
+    height: 45px;
+    padding:10px;
+}
+.clear i{
+    font-size: 20px;
+    color: yellow;
+    float:right;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+    /* transition:all 0.6s ease; */
+}
+
+
+#date{
+    padding:10px;
+    width:100%;
+    color: yellow;
+    text-shadow:1px 1px red;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+/* ------------ content ------------ */
+.content{
+    width:100%;
+    height: 374px;
+    overflow: auto;
+    background-image: url('../img/bg2.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.item{
+    background:#9191c1;
+    width:100%;
+    height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.fa-circle-thin{
+    position: absolute;
+    font-size: 20px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+    color:white;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    position: absolute;
+    font-size: 20px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+    color:#c1ff01;
+    text-shadow:1px 0px white;
+}
+
+.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 18px;
+    left:60px;
+    top:6px;
+    background-color: transparent;
+    width:80%;
+    color:white;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    color : red;
+}
+
+.item i.de{
+    position: absolute;
+    font-size: 20px;
+    right:15px;
+    top:10px;
+    color:red;
+}
+
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+
+/* ------------ add item ------------ */
+.add-to-do{
+    position: relative;
+    width: 100%;
+    height:175px;
+     background-image: url('../img/bg2.jpg');
+     background-size:cover;
+     background-position:center;
+    padding: 10px;
+}
+
+
+.add-to-do i{
+    position: absolute;
+    font-size: 30px;
+    color: yellow;
+    top:8%;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    width: 78%;
+    background-color: none;
+    outline: 1px solid red;
+    font-size: 17px;
+    padding:10px 10px;
+    color:blue;
+    background:white;
+}
+
+
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 19px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+
+}
+
+
+
+
+
+/* ------------------The Media query section----------------- */
+
+@media screen and (max-width:425px) and (min-width:376px){
+    *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+    
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+/*     background-image: url('../img/bg.png'); */
+
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+/* ------------ container ------------ */
+.container{
+    padding:0px;
+    width:100%;
+    margin:0;
+    height:500px;
+}
+
+
+/* ------------ header ------------ */
+.header{
+    width: 100%;
+    height:200px;
+    background-image: url('../img/bg.png');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius:0;
+    position: relative;
+    border-bottom:5px solid red;
+}
+
+.plan{
+    widht:100%;
+    height:100px;
+    padding:15px;
+}
+
+.plan h2{
+    font-size:30px;
+    font-family:cursive;
+    color:yellow;
+    text-shadow:1px 1px red;
+    letter-spacing:3px;
+    text-align:center;
+
+}
+
+
+.clear{
+    width : 100%;
+    height: 45px;
+    padding:10px;
+}
+.clear i{
+    font-size: 20px;
+    color: yellow;
+    float:right;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+    /* transition:all 0.6s ease; */
+}
+
+
+#date{
+    padding:10px;
+    width:100%;
+    color: yellow;
+    text-shadow:1px 1px red;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+/* ------------ content ------------ */
+.content{
+    width:100%;
+    height: 374px;
+    overflow: auto;
+    background-image: url('../img/bg2.jpg');
+     background-size:cover;
+     background-position:center;
+}
+
+
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.item{
+    background:#9191c1;
+    width:100%;
+    height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.fa-circle-thin{
+    position: absolute;
+    font-size: 20px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+    color:white;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    position: absolute;
+    font-size: 20px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+    color:#c1ff01;
+    text-shadow:1px 0px white;
+}
+
+.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 18px;
+    left:60px;
+    top:6px;
+    background-color: transparent;
+    width:80%;
+    color:white;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    color : red;
+}
+
+.item i.de{
+    position: absolute;
+    font-size: 20px;
+    right:15px;
+    top:10px;
+    color:red;
+}
+
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+
+/* ------------ add item ------------ */
+.add-to-do{
+    position: relative;
+    width: 100%;
+    height:175px;
+     background-image: url('../img/bg2.jpg');
+     background-size:cover;
+     background-position:center;
+    padding: 10px;
+}
+
+
+.add-to-do i{
+    position: absolute;
+    font-size: 30px;
+    color: yellow;
+    top:8%;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    width: 80%;
+    background-color: none;
+    outline: 1px solid red;
+    font-size: 17px;
+    padding:10px 10px;
+    color:blue;
+    background:white;
+}
+
+
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 19px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+
+}
+
+
+
+
+
+/* ------------------The Media query section----------------- */
+
+@media screen and (max-width:768px) and (min-width:426px){
+    *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+    
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+/*     background-image: url('../img/bg.png'); */
+
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+/* ------------ container ------------ */
+.container{
+    padding:0px;
+    width:100%;
+    margin:0;
+    height:500px;
+}
+
+
+/* ------------ header ------------ */
+.header{
+    width: 100%;
+    height:200px;
+    background-image: url('../img/bg.png');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius:0;
+    position: relative;
+    border-bottom:5px solid red;
+}
+
+.plan{
+    widht:100%;
+    height:100px;
+    padding:15px;
+}
+
+.plan h2{
+    font-size:30px;
+    font-family:cursive;
+    color:yellow;
+    text-shadow:1px 1px red;
+    letter-spacing:3px;
+    text-align:center;
+
+}
+
+
+.clear{
+    width : 100%;
+    height: 45px;
+    padding:10px;
+}
+.clear i{
+    font-size: 20px;
+    color: yellow;
+    float:right;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+    /* transition:all 0.6s ease; */
+}
+
+
+#date{
+    padding:10px;
+    width:100%;
+    color: yellow;
+    text-shadow:1px 1px red;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+/* ------------ content ------------ */
+.content{
+    width:100%;
+    height: 374px;
+    overflow: auto;
+    background-image: url('../img/bg2.jpg');
+     background-size:cover;
+     background-position:center;
+}
+
+
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.item{
+    background:#9191c1;
+    width:100%;
+    height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.fa-circle-thin{
+    position: absolute;
+    font-size: 20px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+    color:white;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    position: absolute;
+    font-size: 20px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+    color:#c1ff01;
+    text-shadow:1px 0px white;
+}
+
+.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 18px;
+    left:60px;
+    top:6px;
+    background-color: transparent;
+    width:80%;
+    color:white;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    color : red;
+}
+
+.item i.de{
+    position: absolute;
+    font-size: 20px;
+    right:15px;
+    top:10px;
+    color:red;
+}
+
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+
+/* ------------ add item ------------ */
+.add-to-do{
+    position: relative;
+    width: 100%;
+    height:175px;
+     background-image: url('../img/bg2.jpg');
+     background-size:cover;
+     background-position:center;
+    padding: 10px;
+}
+
+
+.add-to-do i{
+    position: absolute;
+    font-size: 30px;
+    color: yellow;
+    top:8%;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    width: 88%;
+    background-color: none;
+    outline: 1px solid red;
+    font-size: 17px;
+    padding:10px 10px;
+    color:blue;
+    background:white;
+}
+
+
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 19px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+
+}
+
